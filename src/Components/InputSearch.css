@@ -1,12 +1,11 @@
 .coinSearchSection {
   display: flex;
-  margin: 3vh 13vh 0vh 13vh;
+  margin: 0vh 1vh 4vh 1vh;
   flex-direction: row;
   align-items: center;
   align-self: baseline;
   width: 100vw;
-  /* padding: 30px 25px 10px 25px; */
-  height: 25vh;
+  height: 10vh;
   justify-content:center;
 }
 .coinInput {
@@ -14,7 +13,6 @@
   width: 65%;
   height: 5vh;
   border-radius: 25vw;
-  /* align-items: center; */
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   padding-left: 20px;
@@ -26,8 +24,7 @@
   border-radius: 25vw;
   border: solid 5px white;
   color: rgb(81, 50, 215);
-  font-size: 30px;
-  /* font-size: 150%; */
+  font-size: 25px;
   font-weight: bolder;
   font-family: "Courier New", Courier, monospace;
   background-color: rgb(221, 159, 170);

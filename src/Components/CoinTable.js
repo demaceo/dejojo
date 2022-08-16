@@ -38,7 +38,7 @@ function CoinTable() {
         <tbody>
           {coins.map((coin) => {
             return (
-              <tr>
+              <tr id={coin.id}>
                 <td className="coinRank">#{coin.market_cap_rank}</td>
                 <td>
                   <img
