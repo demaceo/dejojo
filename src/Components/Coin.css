@@ -1,0 +1,31 @@
+.coinResultTable {
+  width: 90vw;
+  color: whitesmoke;
+  border: solid 1px;
+  border-radius: 25vw;
+  height: 100vh;
+  padding: 40px;
+}
+
+th,
+td {
+  padding: 20px;
+  border: solid 5px rgb(221, 159, 170);
+  font-size: larger;
+  margin: 50px;
+  width: 15%;
+  height: 50%;
+}
+th {
+  color: rgb(245, 245, 118);
+  font-weight: bolder;
+}
+
+td {
+  border: solid 5px rgb(119, 166, 169);
+  background-color: rgba(37, 37, 37, 0.912);
+}
+
+.coinImg {
+    height: 50px;
+}
