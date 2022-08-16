@@ -1,10 +1,11 @@
 .coinResultTable {
   width: 90vw;
   color: whitesmoke;
-  border: solid 1px;
+  border: solid 1px rgb(255, 255, 255);
   border-radius: 25vw;
   height: 100vh;
-  padding: 40px;
+  padding: 60px;
+  margin-bottom: 5vh;
 }
 
 th,
@@ -19,6 +20,7 @@ td {
 th {
   color: rgb(245, 245, 118);
   font-weight: bolder;
+  font-size: x-large;
 }
 
 td {

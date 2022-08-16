@@ -30,7 +30,7 @@ function CoinTable() {
             <th>MCAP Rank</th>
             <th>Token Symbol</th>
             <th>Token Name</th>
-            <th>Current Price</th>
+            <th>Price</th>
             <th>Market Cap</th>
             <th>TVL / MCAP</th>
           </tr>

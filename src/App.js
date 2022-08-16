@@ -11,7 +11,6 @@ import React, {
 import Header from "./Components/Header.js";
 // import Loader from "./Components/Loader.js";
 import InputSearch from "./Components/InputSearch.js";
-// import Body from "./Components/Body.js";
 import CoinTable from "./Components/CoinTable.js";
 // import Footer from "./Components/Footer.js";
 
@@ -41,8 +40,6 @@ function App() {
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <InputSearch />
           <CoinTable />
-          {/* <Body /> */}
-          {/* <Footer /> */}
         </section>
       </>
     );
