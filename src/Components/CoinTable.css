@@ -5,6 +5,7 @@
   border-radius: 25vw;
   height: 100vh;
   padding: 40px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 th,
@@ -26,6 +27,30 @@ td {
   background-color: rgba(37, 37, 37, 0.912);
 }
 
+.coinRank {
+  color: rgb(193, 193, 102);
+  font-weight: bolder;
+}
+
 .coinImg {
-    height: 50px;
+  height: 50px;
+}
+
+.coinName {
+  font-weight: bolder;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  #coinImgSpin {
+    animation: coin-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes coin-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

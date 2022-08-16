@@ -1,8 +1,10 @@
-import "./Coin.css";
+import "./CoinTable.css";
 import React, { useState, useEffect } from "react";
 
-function Coin() {
+function CoinTable() {
   let [coins, setCoins] = useState([]);
+    const [inHover, setHover] = useState(false);
+
 
   useEffect(() => {
     fetchData();
@@ -37,11 +39,17 @@ function Coin() {
           {coins.map((coin) => {
             return (
               <tr>
-                <td>{coin.market_cap_rank}</td>
+                <td className="coinRank">#{coin.market_cap_rank}</td>
                 <td>
-                  <img className="coinImg" src={coin.image} />
+                  <img
+                    className="coinImg"
+                    id={inHover}
+                    onMouseEnter={() => setHover("coinImgSpin")}
+                    onMouseLeave={() => setHover(false)}
+                    src={coin.image}
+                  />
                 </td>
-                <td>{coin.name}</td>
+                <td className="coinName">{coin.name}</td>
                 <td>${coin.current_price}</td>
                 <td>{coin.market_cap}</td>
                 <td>{(coin.market_cap / coin.total_volume).toFixed(2)}</td>
@@ -53,4 +61,4 @@ function Coin() {
     </>
   );
 }
-export default Coin;
+export default CoinTable;
