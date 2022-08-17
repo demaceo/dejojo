@@ -3,15 +3,14 @@ import React, { useState, useEffect } from "react";
 
 function CoinTable() {
   let [coins, setCoins] = useState([]);
-    const [inHover, setHover] = useState(null);
-
+  const [inHover, setHover] = useState(null);
 
   useEffect(() => {
     fetchData();
   }, []);
 
   const fetchData = async () => {
-   await fetch(
+    await fetch(
       "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false"
     )
       .then((res) => res.json())
@@ -40,14 +39,18 @@ function CoinTable() {
               <tr className="coin-solo" key={coin.id}>
                 <td className="coinRank">#{coin.market_cap_rank}</td>
                 <td className="coinImgSection">
-                  <img
-                    className="coinImg"
-                    src={coin.image}
-                  />
+                  <img className="coinImg" src={coin.image} />
                 </td>
                 <td className="coinName">{coin.name}</td>
-                <td>${coin.current_price}</td>
-                <td>{coin.market_cap}</td>
+                <td className="coin-price">
+                  $
+                  {new Intl.NumberFormat()
+                    .format(coin.current_price.toFixed(2))
+                    }
+                </td>
+                <td className="coin-mcap">
+                  {new Intl.NumberFormat().format(coin.market_cap)}
+                </td>
                 <td>{(coin.market_cap / coin.total_volume).toFixed(2)}</td>
               </tr>
             );
