@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   align-self: baseline;
-  width: 100vw;
+  width: 95vw;
   height: 10vh;
   justify-content: center;
 }
@@ -17,10 +17,10 @@
   font-weight: bolder;
   padding-left: 20px;
   font-size: 25px;
-  transition: 2s;
+  transition: 4s;
 }
 .coinSearchSection:hover > .coinInput {
-  width: 63%;
+  width: 70%;
   transition: 2s;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .coinButton {
-  width: 7%;
+  width: 9vw;
   height: 5vh;
   border-radius: 25vw;
   border: solid 5px white;

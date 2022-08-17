@@ -1,7 +1,6 @@
 import "./InputSearch.css";
 import React, { useState, useRef } from "react";
 
-
 function InputSearch() {
   const [coin, setCoin] = useState([]);
   const searchRef = useRef();

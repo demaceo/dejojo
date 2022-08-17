@@ -37,6 +37,7 @@ th {
 td {
   border: solid 7px rgb(119, 166, 169);
   background-color: rgba(37, 37, 37, 0.912);
+  /* transition: 2s; */
 }
 
 .coinRank {
@@ -54,11 +55,13 @@ td {
 
 @media (prefers-reduced-motion: no-preference) {
   .coin-solo:hover > td {
-      border: solid 7px rgb(255, 255, 255);
-      transition: 1s;
+    border: solid 7px rgb(255, 255, 255);
+    background: -webkit-linear-gradient(rgb(237, 94, 239), rgb(9, 94, 241));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
   }
   .coin-solo:hover > td > img {
-    /* height: 50px; */
     animation: coin-logo-spin infinite 4s linear;
   }
 }
