@@ -3,16 +3,16 @@ import React, { useState, useEffect } from "react";
 
 function CoinTable() {
   let [coins, setCoins] = useState([]);
-    const [inHover, setHover] = useState(false);
+    const [inHover, setHover] = useState(null);
 
 
   useEffect(() => {
     fetchData();
   }, []);
 
-  const fetchData = () => {
-    fetch(
-      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
+  const fetchData = async () => {
+   await fetch(
+      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false"
     )
       .then((res) => res.json())
       .then((response) => {
@@ -23,7 +23,6 @@ function CoinTable() {
 
   return (
     <>
-      {/* <section className=""> */}
       <table className="coinResultTable">
         <thead>
           <tr>
@@ -38,14 +37,11 @@ function CoinTable() {
         <tbody>
           {coins.map((coin) => {
             return (
-              <tr id={coin.id}>
+              <tr className="coin-solo" key={coin.id}>
                 <td className="coinRank">#{coin.market_cap_rank}</td>
-                <td>
+                <td className="coinImgSection">
                   <img
                     className="coinImg"
-                    id={inHover}
-                    onMouseEnter={() => setHover("coinImgSpin")}
-                    onMouseLeave={() => setHover(false)}
                     src={coin.image}
                   />
                 </td>

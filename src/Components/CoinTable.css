@@ -8,23 +8,34 @@
   margin-bottom: 5vh;
 }
 
+.coin-solo {
+  transition: 1s all ease-in-out;
+}
+.coin-solo:hover {
+  transition: 0.5s all ease-in-out;
+
+  transform: scale(1.1);
+}
+
 th,
 td {
   padding: 20px;
   border: solid 5px rgb(221, 159, 170);
-  font-size: larger;
   margin: 50px;
   width: 15%;
   height: 50%;
+  font-size: 25px;
+  border-radius: 10px;
+  /* border-radius: 0px 25vh 25px; */
 }
 th {
   color: rgb(245, 245, 118);
   font-weight: bolder;
-  font-size: x-large;
+  /* text-decoration: underline white 3px; */
 }
 
 td {
-  border: solid 5px rgb(119, 166, 169);
+  border: solid 7px rgb(119, 166, 169);
   background-color: rgba(37, 37, 37, 0.912);
 }
 
@@ -42,8 +53,13 @@ td {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  #coinImgSpin {
-    animation: coin-logo-spin infinite 20s linear;
+  .coin-solo:hover > td {
+      border: solid 7px rgb(255, 255, 255);
+      transition: 1s;
+  }
+  .coin-solo:hover > td > img {
+    /* height: 50px; */
+    animation: coin-logo-spin infinite 4s linear;
   }
 }
 
