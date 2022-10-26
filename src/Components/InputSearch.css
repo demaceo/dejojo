@@ -10,17 +10,17 @@
 }
 .coinInput {
   margin-right: 2%;
-  width: 2%;
+  width: 1.5%;
   height: 5vh;
   border-radius: 25vw;
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
   padding-left: 20px;
-  font-size: 25px;
+  font-size: 100%;
   transition: 4s;
 }
 .coinSearchSection:hover > .coinInput {
-  width: 70%;
+  width: 50%;
   transition: 2s;
 }
 

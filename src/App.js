@@ -1,7 +1,7 @@
 // import logo from "./logo.svg";
 import "./App.css";
-import { Router, Route } from "react-router";
-import React, { useState, useEffect } from "react";
+// import { Router, Route } from "react-router";
+// import React, { useState, useEffect } from "react";
 import Header from "./Components/Header.js";
 // import Loader from "./Components/Loader.js";
 import InputSearch from "./Components/InputSearch.js";

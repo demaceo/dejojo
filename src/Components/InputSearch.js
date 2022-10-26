@@ -25,7 +25,7 @@ function InputSearch() {
       .then((res) => res.json())
       .then((response) => {
         setCoin(response);
-        // console.log("coin", coin);
+        console.log("coin", coin);
       })
       .catch((e) => console.log(e));
   };
