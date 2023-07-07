@@ -58,13 +58,13 @@ td {
 
 @media (prefers-reduced-motion: no-preference) {
   .coin-solo:hover > td {
-    /* transition: 1s; */
+    transition: .5s;
     border: solid 5px rgb(255, 255, 255);
     background: -webkit-linear-gradient(rgb(237, 94, 239), rgb(9, 94, 241));
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
-    font-size: 27px;
+    /* font-size: 27px; */
   }
   .coin-solo:hover > td > img {
     animation: coin-logo-spin infinite 4s linear;
